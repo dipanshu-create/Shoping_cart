@@ -12,12 +12,12 @@ export default function Header() {
           </div>
         </Link>
         <ul className="flex list-none items-center space-x-6 text-gray-800 font-semibold">
-            <Link to={"/"}>
-            <li className="cursore-pointer list-none">Home</li></Link>
-            <Link to={"/cart"}>
+          <Link to={"/"}>
+            <li className="cursore-pointer list-none">Home</li>
+          </Link>
+          <Link to={"/cart"}>
             <li className="cursor-pointer">Cart</li>
-            </Link>
-            
+          </Link>
         </ul>
       </nav>
     </div>
