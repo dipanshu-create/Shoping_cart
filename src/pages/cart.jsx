@@ -14,7 +14,16 @@ export default function Cart() {
   return (
     <div>
       {cart && cart.length ? (
-        <div></div>
+        <>
+        <div className="min-h-[80vh] gird md:grid-cols-2 max-w-6xl mx-auto">
+          <div className="flex flex-col justify-center items-center p-3">
+            {cart.map(cartItem=><CartTile carItem={cartItem}/>)}
+          </div>
+        </div>
+        <div className="flex flex-col justify-center items-end p-5 space-y-5 mt-14">
+          <h1>Your Cart Summery</h1>
+        </div>
+        </>
       ) : (
         <div className="min-h-[80vh] flex flex-col items-center justify-center"></div>
       )}
